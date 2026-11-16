@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Christmas Pop!</title>
+<title>Merry Pop!</title>
 <meta name="description" content="Envoltura de regalos y fotos navideñas. Deja tus regalos, nosotros los envolvemos y te los guardamos hasta Navidad.">
-<meta property="og:title" content="Christmas Pop! · Envoltura & Fotografía">
+<meta property="og:title" content="Merry Pop! · Envoltura & Fotografía">
 <meta property="og:description" content="Envolvemos tus regalos y te tomamos la foto navideña de la familia.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap">
@@ -88,7 +88,19 @@ dl{display:grid;gap:14px}
 dt{font-size:13px;font-weight:700;color:var(--teal);letter-spacing:.08em;text-transform:uppercase}
 dd{font-size:18px}
 
-footer{padding:36px 0 48px;color:var(--muted);font-size:14px}
+.wa{background:#25D366;color:#073B1D}
+.btn.wa:hover{background:#1EBE5A}
+.btn.wa svg{width:22px;height:22px;margin-right:10px;flex:0 0 22px}
+.wa-big{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.wa-big .num{font-size:28px;font-weight:700;letter-spacing:.01em;text-decoration:none}
+.chips{display:grid;gap:10px}
+.chip{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px;padding:12px 18px;border:2px solid var(--line);border-radius:14px;background:#fff;text-decoration:none;font-weight:700}
+.chip:hover{border-color:#25D366}
+.chip small{display:block;font-weight:400;color:var(--muted);font-size:14px}
+.chip::after{content:"›";font-size:26px;color:#1EBE5A;line-height:1}
+.fab{position:fixed;right:18px;bottom:18px;z-index:9;display:flex;align-items:center;gap:10px;background:#25D366;color:#073B1D;font-weight:700;text-decoration:none;border-radius:999px;padding:14px 20px 14px 16px;box-shadow:0 8px 24px rgba(0,0,0,.22)}
+.fab svg{width:26px;height:26px}
+footer{padding:36px 0 96px;color:var(--muted);font-size:14px}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 @media (max-width:760px){
@@ -106,10 +118,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <header>
   <div class="wrap">
-    <a class="logo" href="#">Christmas Pop!<small>ENVOLTURA &amp; FOTOGRAFÍA</small></a>
+    <a class="logo" href="#">Merry Pop!<small>ENVOLTURA &amp; FOTOGRAFÍA</small></a>
     <nav>
       <a href="#servicios">Servicios</a>
       <a href="#visitanos">Contacto</a>
+      <a href="https://wa.me/528115008721?text=Hola%20Merry%20Pop%21%20Quiero%20informaci%C3%B3n%20de%20las%20fotos%20navide%C3%B1as." target="_blank" rel="noopener" style="color:#1A8F47;font-weight:700">WhatsApp</a>
     </nav>
   </div>
 </header>
@@ -121,7 +134,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <h1>Tú compras.<br>Nosotros lo dejamos <em>listo para Navidad.</em></h1>
       <p>Envolvemos tus regalos mientras sigues de compras y, si quieres, te los guardamos hasta Navidad para que nadie en casa los descubra. Aprovecha y llévate la foto navideña de la familia en nuestros sets.</p>
       <div class="btns">
-        <a class="btn pri" href="#visitanos">Contáctanos</a>
+        <a class="btn wa" href="https://wa.me/528115008721?text=Hola%20Merry%20Pop%21%20Quiero%20informaci%C3%B3n%20de%20las%20fotos%20navide%C3%B1as." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.7-.3-2.1-.9-3.2-2.6-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.2-.2z"/></svg>Escríbenos por WhatsApp</a>
         <a class="btn sec" href="#ticket">Ya tengo ticket</a>
       </div>
     </div>
@@ -168,6 +181,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           <li>Puedes hacer un set o los dos.</li>
           <li>Las fotos te llegan en digital a tu correo.</li>
         </ul>
+        <div class="btns" style="margin-top:20px"><a class="btn wa" href="https://wa.me/528115008721?text=Hola%20Merry%20Pop%21%20Quiero%20agendar%20una%20sesi%C3%B3n%20de%20fotos%20navide%C3%B1as.%20%C2%BFQu%C3%A9%20d%C3%ADas%20y%20horarios%20tienen%20disponibles%3F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.7-.3-2.1-.9-3.2-2.6-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.2-.2z"/></svg>Agendar por WhatsApp</a></div>
       </div>
     </div>
   </div>
@@ -204,18 +218,17 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <h2>Temporada 2026</h2>
     <div class="visit">
       <div class="card">
+        <dl><div><dt>WhatsApp</dt></div></dl>
+        <div class="wa-big"><a class="num" href="https://wa.me/528115008721?text=Hola%20Merry%20Pop%21%20Quiero%20informaci%C3%B3n%20de%20las%20fotos%20navide%C3%B1as." target="_blank" rel="noopener">81 1500 8721</a></div>
+        <p style="color:var(--muted);margin-bottom:14px">Toca lo que buscas y te abre WhatsApp con el mensaje listo:</p>
+        <div class="chips"><a class="chip" href="https://wa.me/528115008721?text=Hola%20Merry%20Pop%21%20Quiero%20agendar%20una%20sesi%C3%B3n%20de%20fotos%20navide%C3%B1as.%20%C2%BFQu%C3%A9%20d%C3%ADas%20y%20horarios%20tienen%20disponibles%3F" target="_blank" rel="noopener"><span>Agendar mi sesión de fotos<small>Quiero agendar una sesión de fotos navideñas. ¿Qué días y horarios tienen disponibles?</small></span></a><a class="chip" href="https://wa.me/528115008721?text=Hola%20Merry%20Pop%21%20Quiero%20informaci%C3%B3n%20de%20precios%20de%20las%20fotos%20navide%C3%B1as%20%281%20set%20o%20los%202%20sets%29." target="_blank" rel="noopener"><span>Precios de las fotos<small>Quiero información de precios de las fotos navideñas (1 set o los 2 sets).</small></span></a><a class="chip" href="https://wa.me/528115008721?text=Hola%20Merry%20Pop%21%20Ya%20pagu%C3%A9%20mi%20sesi%C3%B3n%20de%20fotos%20y%20quiero%20agendar%20mi%20fecha.%20Mi%20folio%20es%20BF-" target="_blank" rel="noopener"><span>Ya pagué, quiero mi fecha<small>Ya pagué mi sesión de fotos y quiero agendar mi fecha. Mi folio es BF-</small></span></a><a class="chip" href="https://wa.me/528115008721?text=Hola%20Merry%20Pop%21%20Quiero%20informaci%C3%B3n%20sobre%20la%20envoltura%20de%20regalos." target="_blank" rel="noopener"><span>Envoltura de regalos<small>Quiero información sobre la envoltura de regalos.</small></span></a></div>
+        <dl style="margin-top:22px"><div><dt>Correo</dt><dd><a href="mailto:info@christmaspop.net">info@christmaspop.net</a></dd></div></dl>
+      </div>
+      <div class="card">
         <dl>
           <div><dt>Temporada</dt><dd>Hasta el 23 de diciembre</dd></div>
           <div><dt>Entrega de regalos</dt><dd>9 am a 8 pm</dd></div>
         </dl>
-      </div>
-      <div class="card">
-        <dl>
-          <div><dt>Correo</dt><dd><a href="mailto:info@christmaspop.net">info@christmaspop.net</a></dd></div>
-        </dl>
-        <div class="btns" style="margin-top:22px">
-          <a class="btn pri" href="mailto:info@christmaspop.net">Escríbenos</a>
-        </div>
       </div>
     </div>
   </div>
@@ -224,9 +237,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Christmas Pop! · Envoltura &amp; Fotografía</span>
+    <span>© 2026 Merry Pop! · Envoltura &amp; Fotografía</span>
   </div>
 </footer>
 <div class="stripe"></div>
+<a class="fab" href="https://wa.me/528115008721?text=Hola%20Merry%20Pop%21%20Quiero%20informaci%C3%B3n%20de%20las%20fotos%20navide%C3%B1as." target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.7-.3-2.1-.9-3.2-2.6-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.2-.2z"/></svg>WhatsApp</a>
 </body>
 </html>
