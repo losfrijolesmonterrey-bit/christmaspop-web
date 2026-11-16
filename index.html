@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Merry Pop! · Fotos navideñas, envoltura y tienda</title>
-<meta name="description" content="Fotos navideñas en nuestros dos sets, envoltura de regalos y tienda de artículos navideños. Aparta tu sesión por WhatsApp.">
+<meta name="description" content="Fotos navideñas en nuestros dos sets, envoltura de regalos y tienda de decoraciones y regalitos navideños. Aparta tu sesión por WhatsApp.">
 <meta property="og:title" content="Merry Pop! · Fotos navideñas, envoltura y tienda">
 <meta property="og:description" content="La foto navideña de tu familia en nuestros sets. Aparta por WhatsApp.">
 <meta property="og:image" content="https://christmaspop.net/img/banner.jpg">
@@ -121,7 +121,7 @@ ul.li li::before{content:"";flex:0 0 8px;height:8px;border-radius:50%;background
   <div class="tabs" role="tablist" aria-label="Servicios">
     <button class="tab" role="tab" id="t-fotos" aria-controls="fotos" aria-selected="true"><span class="pill">Lo más pedido</span><b>Fotos navideñas</b><span>Set Rojo y Set Verde</span></button>
     <button class="tab" role="tab" id="t-envoltura" aria-controls="envoltura" aria-selected="false"><b>Envoltura de regalos</b><span>Y te los guardamos</span></button>
-    <button class="tab" role="tab" id="t-tienda" aria-controls="tienda" aria-selected="false"><b>Tienda navideña</b><span>Artículos para tu Navidad</span></button>
+    <button class="tab" role="tab" id="t-tienda" aria-controls="tienda" aria-selected="false"><b>Tienda navideña</b><span>Decoraciones y regalitos</span></button>
   </div>
 
   <section class="panel" role="tabpanel" id="fotos" aria-labelledby="t-fotos">
@@ -167,8 +167,8 @@ ul.li li::before{content:"";flex:0 0 8px;height:8px;border-radius:50%;background
   <section class="panel" role="tabpanel" id="tienda" aria-labelledby="t-tienda" hidden>
     <div class="cuerpo">
       <h2>Tienda navideña</h2>
-      <p class="lead">Además de fotos y envoltura, tenemos tienda con artículos navideños para completar tu Navidad.</p>
-      <div class="chips" style="grid-template-columns:1fr"><a class="chip" data-wa="tienda" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.7-.3-2.1-.9-3.2-2.6-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.2-.2z"/></svg><span>¿Qué artículos tienen?<small>Pregúntanos por WhatsApp</small></span></a></div>
+      <p class="lead">Además de fotos y envoltura, tenemos tienda con decoraciones y regalitos navideños para completar tu Navidad.</p>
+      <div class="chips" style="grid-template-columns:1fr"><a class="chip" data-wa="tienda" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.7-.3-2.1-.9-3.2-2.6-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.2-.2z"/></svg><span>¿Qué decoraciones y regalitos tienen?<small>Pregúntanos por WhatsApp</small></span></a></div>
     </div>
     <img class="asoma" src="img/duende-asoma.webp" alt="" width="420" height="630">
   </section>
@@ -191,7 +191,7 @@ ul.li li::before{content:"";flex:0 0 8px;height:8px;border-radius:50%;background
     precios: 'Hola Merry Pop! Quiero información de precios de las fotos navideñas (1 set o los 2 sets).',
     pagado: 'Hola Merry Pop! Ya pagué mi sesión de fotos y quiero agendar mi fecha. Mi folio es BF-',
     envoltura: 'Hola Merry Pop! Quiero información sobre la envoltura de regalos.',
-    tienda: 'Hola Merry Pop! Quiero saber qué artículos navideños tienen en la tienda.'
+    tienda: 'Hola Merry Pop! Quiero saber qué decoraciones y regalitos navideños tienen en la tienda.'
   };
   document.querySelectorAll('[data-wa]').forEach(function (a) {
     a.href = 'https://wa.me/' + NUM + '?text=' + encodeURIComponent(MSG[a.getAttribute('data-wa')]);
