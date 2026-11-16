@@ -194,8 +194,18 @@ ul.li li::before{content:"";flex:0 0 8px;height:8px;border-radius:50%;background
     tienda: 'Hola Merry Pop! Quiero saber qué decoraciones y regalitos navideños tienen en la tienda.'
   };
   document.querySelectorAll('[data-wa]').forEach(function (a) {
-    a.href = 'https://wa.me/' + NUM + '?text=' + encodeURIComponent(MSG[a.getAttribute('data-wa')]);
+    var k = a.getAttribute('data-wa');
+    a.href = 'https://wa.me/' + NUM + '?text=' + encodeURIComponent(MSG[k]);
     a.target = '_blank'; a.rel = 'noopener';
+    // GoatCounter: cada botón de WhatsApp se cuenta con su nombre y de dónde se tocó
+    var NOMBRE = { general: 'contacto', agendar: 'informes-fotos', precios: 'precios-fotos', pagado: 'prepago-bf', envoltura: 'envoltura', tienda: 'tienda' };
+    var donde = a.classList.contains('fab') ? '-flotante' : a.closest('.hero') ? '-arriba' : a.closest('.pie') ? '-pie' : '';
+    a.setAttribute('data-goatcounter-click', 'whatsapp-' + NOMBRE[k] + donde);
+    a.setAttribute('data-goatcounter-title', 'WhatsApp · ' + NOMBRE[k] + donde);
+  });
+  document.querySelectorAll('.tab').forEach(function (t) {
+    t.setAttribute('data-goatcounter-click', 'pestana-' + t.getAttribute('aria-controls'));
+    t.setAttribute('data-goatcounter-title', 'Pestaña: ' + t.getAttribute('aria-controls'));
   });
   var tabs = [].slice.call(document.querySelectorAll('.tab'));
   function abrir(id, push) {
@@ -211,5 +221,6 @@ ul.li li::before{content:"";flex:0 0 8px;height:8px;border-radius:50%;background
   if (['fotos', 'envoltura', 'tienda'].indexOf(h) >= 0) abrir(h, false);
 })();
 </script>
+<script data-goatcounter="https://christmaspop.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
