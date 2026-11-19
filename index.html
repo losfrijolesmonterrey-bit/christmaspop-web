@@ -73,6 +73,7 @@ ul.li{list-style:none;display:grid;gap:8px;margin:0 0 18px}
 ul.li li{display:flex;gap:10px}
 ul.li li::before{content:"";flex:0 0 8px;height:8px;border-radius:50%;background:var(--red);margin-top:9px}
 .chips{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.chips.dos{grid-template-columns:repeat(2,1fr)}
 .chip{display:flex;align-items:center;gap:12px;min-height:60px;padding:12px 16px;border:2px solid #CFEFDB;border-radius:14px;background:#F2FBF5;text-decoration:none;font-weight:700;line-height:1.25}
 .chip:hover{border-color:var(--wa)}
 .chip svg{width:26px;height:26px;flex:0 0 26px;color:#1A9E4B}
@@ -98,7 +99,7 @@ ul.li li::before{content:"";flex:0 0 8px;height:8px;border-radius:50%;background
   .pie{padding-bottom:110px}
   .tabs{grid-template-columns:1fr 1fr}
   .tab:first-child{grid-column:1 / -1}
-  .sets,.chips{grid-template-columns:1fr}
+  .sets,.chips,.chips.dos{grid-template-columns:1fr}
   .panel{padding:18px}
   .panel .cuerpo{max-width:none}
   .asoma{display:none}
@@ -147,10 +148,9 @@ ul.li li::before{content:"";flex:0 0 8px;height:8px;border-radius:50%;background
       <li>Te avisamos con un pager cuando sea tu turno.</li>
       <li>Tus fotos te llegan en digital a tu correo.</li>
     </ul>
-    <div class="chips">
+    <div class="chips dos">
       <a class="chip" data-wa="agendar" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.7-.3-2.1-.9-3.2-2.6-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.2-.2z"/></svg><span>Informes de fotos<small>Horarios y cómo funciona</small></span></a>
       <a class="chip" data-wa="precios" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.7-.3-2.1-.9-3.2-2.6-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.2-.2z"/></svg><span>Precios<small>1 set o los 2 sets</small></span></a>
-      <a class="chip" data-wa="pagado" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.7-.3-2.1-.9-3.2-2.6-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.2-.2z"/></svg><span>Ya pagué mi sesión<small>Tengo mi folio BF</small></span></a>
     </div>
   </section>
 
@@ -195,7 +195,6 @@ ul.li li::before{content:"";flex:0 0 8px;height:8px;border-radius:50%;background
     general: 'Hola Merry Pop! Quiero información.',
     agendar: 'Hola Merry Pop! Quiero informes de las sesiones de fotos navideñas.',
     precios: 'Hola Merry Pop! Quiero información de precios de las fotos navideñas (1 set o los 2 sets).',
-    pagado: 'Hola Merry Pop! Ya pagué mi sesión de fotos y quiero información. Mi folio es BF-',
     envoltura: 'Hola Merry Pop! Quiero información sobre la envoltura de regalos.',
     tienda: 'Hola Merry Pop! Quiero saber qué decoraciones y regalitos navideños tienen en la tienda.'
   };
@@ -204,7 +203,7 @@ ul.li li::before{content:"";flex:0 0 8px;height:8px;border-radius:50%;background
     a.href = 'https://wa.me/' + NUM + '?text=' + encodeURIComponent(MSG[k]);
     a.target = '_blank'; a.rel = 'noopener';
     // GoatCounter: cada botón de WhatsApp se cuenta con su nombre y de dónde se tocó
-    var NOMBRE = { general: 'contacto', agendar: 'informes-fotos', precios: 'precios-fotos', pagado: 'prepago-bf', envoltura: 'envoltura', tienda: 'tienda' };
+    var NOMBRE = { general: 'contacto', agendar: 'informes-fotos', precios: 'precios-fotos', envoltura: 'envoltura', tienda: 'tienda' };
     var donde = a.classList.contains('fab') ? '-flotante' : a.closest('.hero') ? '-arriba' : a.closest('.pie') ? '-pie' : '';
     a.setAttribute('data-goatcounter-click', 'whatsapp-' + NOMBRE[k] + donde);
     a.setAttribute('data-goatcounter-title', 'WhatsApp · ' + NOMBRE[k] + donde);
